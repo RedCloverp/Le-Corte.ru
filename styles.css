@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 900px 856px 1038px 767px 220px;
+}
+
+header {
+    background-image: url(./cources/bgc.png);
+}
+
+main {
+    background: #282828;
+}
+
+.wineMap {
+    background: #E6E3C4;
+}
+
+.tasting {
+    background: #282828;
+}
+
+footer {
+    background: #998431;
+}
+
+.namePhone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.namePhone a {
+    color: #fff;
+    
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 405px;
+    padding-right: 405px;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    align-items: center;
+}
+
+.nav p {
+    padding: 13px;
+    
+    font-family: 'Monserat';
+    color: #ffffff;
+}
+
+.nav a {
+    color:#ffffff;
+}
+
+.btnVineMap {
+    position: absolute;
+    top: 700px; left: 752px;
+    width: 203px;
+    height: 50px;
+    background: #99862A;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.btnVineMap:hover {
+    background-color: #bba849;
+}
+
+
+.btnTasting {
+    position: absolute;
+    top: 700px; left: 985px;
+    width: 203px;
+    height: 50px;
+    color: #fff;
+    background: #99862A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.btnTasting:hover {
+    background-color: #bba849;
+}
+
+
+.description {
+    width: 1110px;
+    height: 656px;
+    position: relative;
+    top: 100px; left: 405px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    border: solid #fff 1px;
+    font-family: 'Playfair Display';
+}
+
+.description p {
+    font-family: 'Montserrat';
+    padding-left: 188px;
+    padding-right: 188px;
+    padding-top: 40px;
+}
+
+.description span {
+    border-bottom: solid #fff 1px;
+}
+
+.description img {
+    bottom: 40px;
+}
+
