@@ -5,14 +5,14 @@
     text-decoration: none;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 900px 856px 1038px 767px 220px;
-}
+/* header */
 
 header {
     background-image: url(./cources/bgc.png);
+    background-size: 100% 100%;
+    position: relative;
+    height: 95vmin;
+
 }
 
 main {
@@ -31,10 +31,17 @@ footer {
     background: #998431;
 }
 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .namePhone {
+    width: 61%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 20px;
     color: #ffffff;
@@ -50,27 +57,50 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 405px;
-    padding-right: 405px;
-    border-top: solid 1px #fff;
-    border-bottom: solid 1px #fff;
     align-items: center;
 }
 
-.nav p {
-    padding: 13px;
-    
-    font-family: 'Monserat';
+.nav ul {
+    width: 61vw;
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
     color: #ffffff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.nav li {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: #fff 1px solid;
+}
+
+.nav li:last-child {
+    border-right: none;
 }
 
 .nav a {
     color:#ffffff;
 }
 
-.btnVineMap {
+.bottomContainer {
+    height: 165px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
     position: absolute;
-    top: 700px; left: 752px;
+    bottom: 0;
+    gap: 30px;
+}
+
+.btnVineMap {
     width: 203px;
     height: 50px;
     background: #99862A;
@@ -79,6 +109,9 @@ footer {
     justify-content: center;
     align-items: center;
     transition: 0.2s;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .btnVineMap:hover {
@@ -87,8 +120,6 @@ footer {
 
 
 .btnTasting {
-    position: absolute;
-    top: 700px; left: 985px;
     width: 203px;
     height: 50px;
     color: #fff;
@@ -97,18 +128,27 @@ footer {
     justify-content: center;
     align-items: center;
     transition: 0.2s;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .btnTasting:hover {
     background-color: #bba849;
 }
 
+/* description */
+
+main {
+    height: 90vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .description {
     width: 1110px;
     height: 656px;
-    position: relative;
-    top: 100px; left: 405px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,3 +173,20 @@ footer {
     bottom: 40px;
 }
 
+/* wineMap */
+
+.wineMap {
+    height: 105vmin;
+}
+
+/* Tasting */
+
+.tasting {
+    height: 83vmin;
+}
+
+/* Footer*/
+
+footer {
+    height: 40vmin;
+}
