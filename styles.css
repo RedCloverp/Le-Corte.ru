@@ -177,7 +177,43 @@ main {
 
 .wineMap {
     height: 105vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.wineMap span {
+    position: absolute;
+    top: 1800px;
+    width: 1110px;
+    border: 1px solid #998431;
+}
+
+.wineMapDescription {
+    border: 1px solid black;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.wineMapDescription h1 {
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+
+.wineMapPhoto {
+    border: 1px solid black;
+    margin-left: 80px;
+}
+
+.wineMapPhoto img {
+    padding: 15px 13px 15px 13px;
+}
+
 
 /* Tasting */
 
