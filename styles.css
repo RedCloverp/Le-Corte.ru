@@ -7,6 +7,13 @@
 
 /* header */
 
+
+h1 h2 {
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    line-height: 150%;
+}
+
 header {
     background-image: url(./cources/bgc.png);
     background-size: 100% 100%;
@@ -178,40 +185,71 @@ main {
 .wineMap {
     height: 105vmin;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
 
-.wineMap span {
-    position: absolute;
-    top: 1800px;
+.trait {
+    display: block;
     width: 1110px;
-    border: 1px solid #998431;
+    border: 2px solid #998431;
 }
 
 .wineMapDescription {
-    border: 1px solid black;
-    margin-right: 90px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    flex-direction: row;
+    align-items: stretch;
+    border-top: 3px solid #998431;
+    border-bottom: 3px solid #998431;
+    padding: 60px 0 60px 0;
 }
 
-.wineMapDescription h1 {
-    padding-bottom: 25px;
+.newCollection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.tableBottle {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.right {
+    border-right: 1px solid black;
+}
+
+.bottom {
     border-bottom: 1px solid black;
 }
 
+.wineMapDescription h1 {
+    border-bottom: 1px solid black;
+}
+
+.wineMapDescription p {
+    font-family: 'Montserrat';
+    font-style: n;
+}
+
 .wineMapPhoto {
-    border: 1px solid black;
     margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wineMapPhoto div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .wineMapPhoto img {
-    padding: 15px 13px 15px 13px;
+    /* padding: 15px 13px 15px 13px; */
 }
 
 
@@ -219,10 +257,36 @@ main {
 
 .tasting {
     height: 83vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.tastingDescription {
+    width: 1110px;
+    height: 538px;
+    display: flex;
+    border: #ffffff 3px solid;
+}
+
+.tastingDescription::before {
+    content:url("./cources/image (2).png");
+    position: absolute;
+    left: 19.5%;
+    top: 3100px;
+
+}
+
+.tastingDescription::after {
+    content:url("./cources/image (1).png");
+    position: absolute;
+    right: 18.2%;
+    top: 3100px;
+}
 /* Footer*/
 
 footer {
     height: 40vmin;
 }
+
