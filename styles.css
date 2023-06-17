@@ -1,12 +1,10 @@
+/* General */
 * {
     margin: 0px;
     padding: 0px;
     border: none;
     text-decoration: none;
 }
-
-/* header */
-
 
 h1 h2 {
     font-family: 'Playfair Display';
@@ -38,12 +36,21 @@ footer {
     background: #998431;
 }
 
+/* End General */
+
+/* Header */
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.logo {
+    font-family: 'Playfair Display';
+    font-size: 18px;
+}
+
 .namePhone {
     width: 61%;
     display: flex;
@@ -125,7 +132,6 @@ footer {
     background-color: #bba849;
 }
 
-
 .btnTasting {
     width: 203px;
     height: 50px;
@@ -144,7 +150,8 @@ footer {
     background-color: #bba849;
 }
 
-/* description */
+/* End Header */
+/* Main */
 
 main {
     height: 90vmin;
@@ -179,6 +186,14 @@ main {
 .description img {
     bottom: 40px;
 }
+
+.shortTrait {
+    display: block;
+    width: 15%;
+    border-bottom: 1px white solid;
+}
+
+/* End Main */
 
 /* wineMap */
 
@@ -288,18 +303,93 @@ padding: 10px 0px 10px 10px;
 
 .tastingDescription::before {
     content:url("./cources/image (2).png");
-    position: absolute;
-    left: 19.5%;
-    top: 3100px;
+    position: relative;
+    right: 50px;
+    bottom: 50px;
 
 }
+
+.reseption::before {
+    content: "Запись на дегустацию";
+    position: relative;
+    bottom: 45px;
+    left: 15px;
+    width: 290px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px 0px 15px;
+    color: white;
+    background-color: #282828;
+    font-family: 'Montserrat';
+}
+
 
 .tastingDescription::after {
     content:url("./cources/image (1).png");
-    position: absolute;
-    right: 18.2%;
-    top: 3100px;
+    position: relative;
+    left: 95px;
+    bottom: 50px;
 }
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+
+}
+
+.inputs p {
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 150%;
+}
+
+.tastingInput {
+    width: 260px;
+    height: 40px;
+    background-color: #282828 !important;
+    border-bottom: 2px white solid;
+    margin: 0px 5px 0px 5px;
+    color: white !important;
+}
+
+.tastingInput::placeholder {
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+}
+
+.longInput {
+    width: 540px;
+    margin: 0px;
+    
+}
+
+.tastingBtn {
+    width: 540px;
+    height: 50px;
+    background: #282828;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
 /* Footer*/
 
 footer {
@@ -358,4 +448,3 @@ footer {
 .footerDescription p h1 {
     font-size: 14px;
 }
-
